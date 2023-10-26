@@ -123,16 +123,16 @@ public class Graphics extends JFrame {
                             tiles[finalRow][finalColumn - 1].addMouseListener(new MouseAdapter() {
                                 @Override
                                 public void mouseClicked(MouseEvent e) {
-                                    // Swap the text of the buttons
+
                                     String temp = tiles[finalRow][finalColumn].getText();
                                     tiles[finalRow][finalColumn].setText(tiles[finalRow][finalColumn - 1].getText());
                                     tiles[finalRow][finalColumn - 1].setText(temp);
 
-                                    // Swap enabled
+
                                     tiles[finalRow][finalColumn].setEnabled(true);
                                     tiles[finalRow][finalColumn - 1].setEnabled(false);
 
-                                    // Swap the button references in the array
+
                                     JButton tempButton = tiles[finalRow][finalColumn];
                                     tiles[finalRow][finalColumn] = tiles[finalRow][finalColumn - 1];
                                     tiles[finalRow][finalColumn - 1] = tempButton;
@@ -144,16 +144,16 @@ public class Graphics extends JFrame {
                             tiles[finalRow - 1][finalColumn].addMouseListener(new MouseAdapter() {
                                 @Override
                                 public void mouseClicked(MouseEvent e) {
-                                    // Swap the text of the buttons
+
                                     String temp = tiles[finalRow][finalColumn].getText();
                                     tiles[finalRow][finalColumn].setText(tiles[finalRow - 1][finalColumn].getText());
                                     tiles[finalRow - 1][finalColumn].setText(temp);
 
-                                    // Swap enabled
+
                                     tiles[finalRow][finalColumn].setEnabled(true);
                                     tiles[finalRow - 1][finalColumn].setEnabled(false);
 
-                                    // Swap the button references in the array
+
                                     JButton tempButton = tiles[finalRow][finalColumn];
                                     tiles[finalRow][finalColumn] = tiles[finalRow - 1][finalColumn];
                                     tiles[finalRow - 1][finalColumn] = tempButton;
@@ -166,16 +166,16 @@ public class Graphics extends JFrame {
                             tiles[finalRow + 1][finalColumn].addMouseListener(new MouseAdapter() {
                                 @Override
                                 public void mouseClicked(MouseEvent e) {
-                                    // Swap the text of the buttons
+
                                     String temp = tiles[finalRow][finalColumn].getText();
                                     tiles[finalRow][finalColumn].setText(tiles[finalRow + 1][finalColumn].getText());
                                     tiles[finalRow + 1][finalColumn].setText(temp);
 
-                                    // Swap enabled
+
                                     tiles[finalRow][finalColumn].setEnabled(true);
                                     tiles[finalRow + 1][finalColumn].setEnabled(false);
 
-                                    // Swap the button references in the array
+
                                     JButton tempButton = tiles[finalRow][finalColumn];
                                     tiles[finalRow][finalColumn] = tiles[finalRow + 1][finalColumn];
                                     tiles[finalRow + 1][finalColumn] = tempButton;
@@ -187,16 +187,13 @@ public class Graphics extends JFrame {
                             tiles[finalRow][finalColumn + 1].addMouseListener(new MouseAdapter() {
                                 @Override
                                 public void mouseClicked(MouseEvent e) {
-                                    // Swap the text of the buttons
                                     String temp = tiles[finalRow][finalColumn].getText();
                                     tiles[finalRow][finalColumn].setText(tiles[finalRow][finalColumn + 1].getText());
                                     tiles[finalRow][finalColumn + 1].setText(temp);
 
-                                    // Swap enabled
                                     tiles[finalRow][finalColumn].setEnabled(true);
                                     tiles[finalRow][finalColumn + 1].setEnabled(false);
 
-                                    // Swap the button references in the array
                                     JButton tempButton = tiles[finalRow][finalColumn];
                                     tiles[finalRow][finalColumn] = tiles[finalRow][finalColumn + 1];
                                     tiles[finalRow][finalColumn + 1] = tempButton;
